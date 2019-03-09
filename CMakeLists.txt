@@ -52,15 +52,6 @@ find_package(tello_msgs REQUIRED)
 find_package(tf2_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 
-# Generate ROS messages
-rosidl_generate_interfaces(
-  ${PROJECT_NAME}
-  msg/Arena.msg
-  srv/GetGlobalPlan.srv
-  srv/GetLocalPlan.srv
-  DEPENDENCIES fiducial_vlam_msgs geometry_msgs nav_msgs std_msgs
-)
-
 # Local includes
 include_directories(
   include
