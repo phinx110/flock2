@@ -16,19 +16,21 @@ def generate_launch_description():
     dr2_ns = 'drone2'
 
     dr1_params = [{
-        'drone_ip': '192.168.86.206',
-        'command_port': '11001',
-        'drone_port': '12001',
-        'data_port': '13001',
-        'video_port': '14001'
+        'drone_ip': '192.168.10.1',
+        'command_port': '38065',
+	'drone_interface_ip': '192.168.10.2',
+        'drone_port': '8889',
+        'data_port': '8890',
+        'video_port': '11111'
     }]
 
     dr2_params = [{
-        'drone_ip': '192.168.86.212',
-        'command_port': '11002',
-        'drone_port': '12002',
-        'data_port': '13002',
-        'video_port': '14002'
+        'drone_ip': '192.168.11.1',
+        'command_port': '38065',
+	'drone_interface_ip': '192.168.10.2',
+        'drone_port': '8889',
+        'data_port': '8890',
+        'video_port': '11111'
     }]
 
     base_params = [{
